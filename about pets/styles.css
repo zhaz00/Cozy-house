@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.block-1 {
+  background-image: url(background.png);
+  background-size: 100%;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.header {
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #f1cdb3;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Georgia", sans-serif;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  color: #fff;
+}
+
+.nav-link {
+  color: #cdcdcd;
+  text-decoration: none;
+  margin-right: 35px;
+  transition: 0.4s;
+  transition-property: color;
+}
+
+.nav-link:hover {
+  color: #fafafa;
+  border-bottom: 3px solid #f1cdb3;
+}
+
+.hero {
+  display: flex;
+  margin: 0 40px;
+  /* overflow: hidden; */
+  align-items: center;
+  color: #fff;
+}
+
+.hero-text {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 42px;
+  align-items: flex-start;
+}
+
+.hero-text h1 {
+  font-family: Georgia;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.hero-text p {
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #cdcdcd;
+}
+
+.hero-text button {
+  padding: 15px 45px;
+  background-color: #f1cdb3;
+  border-radius: 100px;
+  font-size: 17px;
+  font-family: Georgia;
+}
+
+.hero-img {
+  flex-basis: 60%;
+}
+
+.hero-img img {
+  height: 85vh;
+  width: 100%;
+}
+
+.about {
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-basis: 40%;
+  justify-content: space-around;
+}
+.about-header {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex-basis: 40%;
+}
+.about-header h2 {
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #545454;
+}
+.about-header p {
+  color: #4c4c4c;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.block-friends {
+  padding-bottom: 100px;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.heading h3 {
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  width: 400px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.haracter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 270px;
+  height: 435px;
+}
+.haracter p {
+  text-align: center;
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.haracter button {
+  padding: 15px 45px;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  font-size: 17px;
+  color: #292929;
+  font-family: Georgia;
+  background-color: white;
+}
+.buttonget button {
+  font-family: Georgia;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 130%;
+  padding: 15px 45px;
+  border-radius: 100px;
+  background: #f1cdb3;
+  width: 261px;
+  height: 52px;
+  border: 2px solid #f1cdb3;
+}
+.block-help {
+  /* padding: 80px 40px; */
+  padding-bottom: 100px;
+  /* width: 1200px; */
+  /* height: 431px; */
+}
+.head {
+  /* display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+
+  /* */
+  text-align: center;
+  /* gap: 60px; */
+  /* width: 1026px; */
+}
+.head h4 {
+  font-family: Georgia;
+  font-size: 35px;
+  color: #545454;
+  width: 308px;
+  height: 90px;
+  text-align: center;
+  line-height: 130%;
+}
+
+.heading {
+  color: var(--color-dark-l, #545454);
+  text-align: center;
+
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 45.5px */
+  letter-spacing: 2.1px;
+  margin-bottom: 100px;
+}
+
+.icons {
+  width: 10%;
+}
+
+.allicons1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 30px;
+  text-align: center;
+}
+
+.allicons2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.icons img {
+  width: 60px;
+  height: 60px;
+}
+.icons p {
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  color: #545454;
+  text-align: center;
+  padding-top: 20px;
+}
+.block-donation {
+  padding-top: 100px;
+}
+.alldonation {
+  padding: 80px 183px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 380px;
+  height: 283px;
+}
+
+.text h5 {
+  width: 300px;
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #545454;
+}
+.text p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #545454;
+  width: 307px;
+  height: 17px;
+  font-family: Georgia;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+p:last-child {
+  color: var(--color-dark-m, #b2b2b2);
+  font-family: Arial;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px;
+  /* width: 380px; */
+  height: 72px;
+}
+.footer {
+  background-image: url(footer.png);
+  background-size: 100%;
+  max-height: 100vh;
+  overflow: auto;
+  padding: 40px 40px;
+  padding-bottom: 0px;
+}
+.footerall {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 100%;
+  width: 1200px;
+  height: 310px;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.first h6 {
+  width: 278px;
+  height: 90px;
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #fff;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.second span {
+  width: 270px;
+  height: 110px;
+  font-family: Georgia;
+  font-size: 35px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.lay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: center; */
+  gap: 20px;
+}
+.lay p {
+  color: #f1cdb3;
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  width: 260px;
+}
+.lay img {
+  width: 40px;
+  height: 32px;
+}
